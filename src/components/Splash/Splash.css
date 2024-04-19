@@ -1,0 +1,56 @@
+/* CONTAINER GERAL DA TELA DE SPLASH */
+.splash-container{
+    height: 100vh;
+    width: 100%;
+    background-image: radial-gradient(circle 450px at top center, #542197, #4C207F, #34125E,#220A44,#05021F);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    transition: ease-out 1s;
+}
+
+.img-splash{
+    height: 300px;
+    width: 300px;
+    opacity: 0;
+    transition: all 2.5s;
+}
+
+.splash-text{
+    height: 150px;
+    width: 580px;
+    position: relative;
+    scale: 0.6;
+    margin-top: -50px;
+    transition: ease-in 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.splash-text img{
+    opacity: 0;
+}
+
+#text-splash9{
+    scale: 0.6;
+    margin-top: -20px;
+}
+
+.barra{
+    animation: barra 1.5s 2s;
+    animation-iteration-count: 3;
+}
+@keyframes barra{
+    0%{
+        opacity: 1;
+    }
+
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
