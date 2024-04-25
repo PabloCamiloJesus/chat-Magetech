@@ -5,23 +5,27 @@ export const Container = styled.div``;
 export const Line = styled.div`
     margin: 10px;
     display: flex;
-
+    color: white;
     &.me {
         > div {
-            background-color: #dcf8c6;
+            background-color: #A020F0;
+                     
         }
         justify-content: right;
+        
     }
+    
 `;
 
 export const Content = styled.div`
-    background-color: #fff;
+    background-color: #4c207f;
     border-radius: 10px;
-    box-shadow: 0 1px 1px #ccc;
+    box-shadow: 0 1px 1px #;
     display: flex;
     flex-direction: column;
     padding: 3px;
     max-width: 80%;
+    box-shadow: 0 5px 20px 2px rgba(128, 0, 128, 0.5);
 `;
 
 export const Message = styled.span`

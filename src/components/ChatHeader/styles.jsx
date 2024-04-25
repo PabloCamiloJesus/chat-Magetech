@@ -2,14 +2,21 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     height: 59px;
-    background-color: #f0f2f5;
+    background-image: linear-gradient(
+         to left,
+        #542197,
+        #4c207f,
+        #34125e,
+        #220a44,
+        #05021f
+      );
     padding:10px 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     box-shadow: 0 1px 2px #0003;
     z-index: 1;
-    
+    color: white;
     `;
 
 export const UserInfo = styled.div`
@@ -51,7 +58,7 @@ gap: 10px;
 svg {
     width: 24px;
     height: 24px;
-    color: #54656f;
+    color: #fff;
     cursor: pointer;
 }
 `;

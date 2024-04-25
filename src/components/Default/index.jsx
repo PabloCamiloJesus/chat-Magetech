@@ -8,7 +8,7 @@ const Default = () => {
         <C.Container>
             <LogoTitle />
             <C.Title>
-                MageTech Chat-App
+                TechMage Chat
             </C.Title>
             <C.Info>
                 Agora você pode enviar e receber mensagens sem precisar manter seu celular conectado à internet.

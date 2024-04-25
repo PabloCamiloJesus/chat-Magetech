@@ -11,6 +11,12 @@ const GlobalStyle = createGlobalStyle`
     height: 100vh;
     font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
+  .dark{
+    color: #fff;
+    background-color: #000;
+  }
 `;
+
+
 
 export default GlobalStyle;
