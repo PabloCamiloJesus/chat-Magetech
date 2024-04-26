@@ -13,6 +13,7 @@ export const Container = styled.div`
         color: white;
     }
 
+    // svg que aparece caso não haja um email correspondente para o escrito no prompt
     svg{
         width: 30px;
         height: 30px;

@@ -1,5 +1,9 @@
+// Imports de imagens para a tela de Splash
 
+// Logo da Empresa
 import SplashLogo from "../../assets/logo-sem-fundo.png";
+
+// Cada letra da palavra TECHMAGE
 import Split1 from "../../assets/Splash-Splits/Split1_T.png";
 import Split2 from "../../assets/Splash-Splits/Split2_E.png";
 import Split3 from "../../assets/Splash-Splits/Split3_C.png";
@@ -8,10 +12,14 @@ import Split5 from "../../assets/Splash-Splits/Split5_M.png";
 import Split6 from "../../assets/Splash-Splits/Split6_A.png";
 import Split7 from "../../assets/Splash-Splits/Split7_G.png";
 import Split8 from "../../assets/Splash-Splits/Split8_E.png";
+
+// Barra para simular a digitação
 import Split9_Digit from "../../assets/Splash-Splits/Split9_Digit.png";
+
+// CSS
 import "./Splash.css";
 
-
+// Exportando Função
 export default function Splash() {
 
     // Pega o item img-splash
@@ -23,6 +31,7 @@ export default function Splash() {
 
     };
 
+    // Pega cada imagem do texto TECHMAGE
     const textSplashes = document.querySelectorAll(".text-splash");
 
     // Função para animar um elemento individual
@@ -38,17 +47,19 @@ export default function Splash() {
         animateElement(textSplash, delay);
     });
 
-
-
+    // Retornando os elementos
     return (
         <div>
 
+            {/* Container Geral do Splash */}
             <div className="splash-container">
 
+                {/* A logo TechMage */}
                 <div className="splash-img">
                     <img src={SplashLogo} alt="" className="img-splash" />
                 </div>
 
+                {/* Div com Todas as Letras e Caracteres formando o nosso Nome */}
                 <div className="splash-text">
                     <img src={Split1} alt="" className="text-splash" id="text-splash1" />
                     <img src={Split2} alt="" className="text-splash" id="text-splash2" />

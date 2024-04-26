@@ -1,33 +1,24 @@
-import React, { useState } from "react";
+import React from "react";
 import { auth, provider } from "../../services/firebase";
 import * as C from "./styles";
 import Mago from "../../assets/MagoPronto.jpeg";
-import Moon from "../../assets/icon_moon_crescente.png";
-import Sun from "../../assets/icon_sun.png";
 
-const Login = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+const Login = () => {;
 
+  // Chama a janela de autentcação do Google
   const handleSignin = () => {
     auth.signInWithPopup(provider).catch(alert);
   };
-
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-    // Aqui você pode adicionar lógica adicional para mudar o tema da sua aplicação
-  };
-
+  
   return (
+    // Estilização da página
     <C.Container>
-      <C.LoginBox isDarkMode={isDarkMode}>
+      <C.LoginBox>
         <C.Image src={Mago} />
-        <C.ButtonBox isDarkMode={isDarkMode}>
-          <C.Title isDarkMode={isDarkMode}>TechMage</C.Title>
-          <C.Text isDarkMode={isDarkMode}>Conversas que conectam, laços que perduram.</C.Text>
-          <C.Button onClick={handleSignin} isDarkMode={isDarkMode}>Login com Google</C.Button>
-           <C.ThemeButton onClick={toggleDarkMode} isDarkMode={isDarkMode}>
-            {isDarkMode ? <i class="bi bi-brightness-high"></i> : <i class="bi bi-moon"></i>}
-          </C.ThemeButton>
+        <C.ButtonBox>
+          <C.Title>TechMage Chat</C.Title>
+          <C.Text>Conversas que conectam, laços que perduram.</C.Text>
+          <C.Button onClick={handleSignin}>Login com Google</C.Button>
         </C.ButtonBox>
       </C.LoginBox>
     </C.Container>

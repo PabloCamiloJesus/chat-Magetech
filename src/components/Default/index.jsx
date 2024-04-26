@@ -1,7 +1,6 @@
 import React from "react";
 import * as C from "./styles";
 import { LogoTitle } from "./styles";
-// import { MdMessage } from "react-icons/md";
 
 const Default = () => {
     return (

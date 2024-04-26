@@ -1,14 +1,18 @@
 import styled from "styled-components";
 
+// Icons da Biblioteca Material Digital do React
+import { MdDonutLarge, MdChat, MdMoreVert } from "react-icons/md";
+
 export const Container = styled.div`
     height: 59px;
-    background-color: #f0f2f5;
+    background-color: ${({ isDarkMode }) => (isDarkMode ? "#05021f" : "#fff")};
     padding: 10px 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 5px;
     box-shadow: 0 1px 2px #0003;
+    transition: all 0.25s;
 `;
 
 export const Avatar = styled.img`

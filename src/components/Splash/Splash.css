@@ -11,6 +11,7 @@
     transition: ease-out 1s;
 }
 
+/* Logo da Tela de Splash */
 .img-splash{
     height: 300px;
     width: 300px;
@@ -18,6 +19,7 @@
     transition: all 2.5s;
 }
 
+/* Container das letras do Nome */
 .splash-text{
     height: 150px;
     width: 580px;
@@ -29,19 +31,25 @@
     justify-content: center;
     align-items:center;
 }
+
+/* Imagens das letras Techmage */
 .splash-text img{
     opacity: 0;
 }
 
+/* Caractere Barra de Digitação */
 #text-splash9{
     scale: 0.6;
     margin-top: -20px;
 }
 
+/* Animação da Barra */
 .barra{
     animation: barra 1.5s 2s;
     animation-iteration-count: 3;
 }
+
+/* Animação Keyframe alternando o estado de opacidade entre 0 e 1 */
 @keyframes barra{
     0%{
         opacity: 1;

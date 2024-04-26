@@ -6,6 +6,9 @@ export const Container = styled.div`
   height: 100vh;
   align-items: center;
   justify-content: center;
+
+  // Background com Radial Gradient, produz o formato de um circulo de 450px de diametro, definindo posição como topo centro
+
   background-image: radial-gradient(
     circle 450px at top center,
     #542197,
@@ -22,8 +25,7 @@ export const LoginBox = styled.div`
   margin: 0 100px;
   margin-top: 100p;
   transition: all 0.3s;
-  background-color: ${({ isDarkMode }) => (isDarkMode ? "#fff" : "#05021f")};
-    color: ${({ isDarkMode }) => (isDarkMode ? "#fff" : "#05021f")};;
+  background-color: ;
   display: flex;
   // justify-content: flex-start;
   align-items: center;
@@ -50,19 +52,19 @@ export const ButtonBox = styled.div`
 export const Title = styled.p`
   font-family: "Alfa Slab One", sans-serif;
   font-weight: 500;
-  font-size: 64px;
+  font-size: 48px;
   font-weight: bold;
   letter-spacing: 3px;
   text-align: center;
   transition: all 0.3s;
-  color: ${({ isDarkMode }) => (isDarkMode ? "#05021f" : "#fff")};
+  color: #fff;
     
 `;
 
 export const Text = styled.p`
   font-size: 24px;
   transition: all 0.3s;
-  color:  ${({ isDarkMode }) => (isDarkMode ? "#05021f" : "#fff")};
+  color: #fff;
   margin-top: 30px;
   font-style: italic;
 `;
@@ -82,18 +84,7 @@ export const Button = styled.button`
 
   &:hover {
     background-color: transparent;
-    color:  ${({ isDarkMode }) => (isDarkMode ? "#05021f" : "#fff")};
-    border: 2px solid ${({ isDarkMode }) => (isDarkMode ? "#05021f" : "#fff")};
+    color: #fff;
+    border: 2px solid #fff;
   }
-`;
-
-export const ThemeButton = styled.button`
-  margin-top: 60px;
-  padding: 5px;
-  background: transparent;
-  border: none;
-  outline: none;
-  transition: all 0.3s;
-  color: ${({ isDarkMode }) => (isDarkMode ? "#05021f" : "#fff")};
-  scale: 3;
 `;
